@@ -1,0 +1,33 @@
+{% extends 'dashboard.html' %}
+{% block content %}
+ <div class="navbar">
+        <a href="#home">My first app</a>
+        <a href="#news"></a>
+        <a href="#contact"></a>
+    </div>
+    <div class="main">
+        <h1>Fixed Top Menu</h1>
+        <h2>Scroll this page to see the effect</h2>
+        <h2>The navigation bar will stay at the top of the page while scrolling</h2>
+        <h2>test h2</h2>
+    </div>
+    <h2>Fixed/Sticky Footer Example</h2>
+<p>The footer is placed at the bottom of the page.</p>
+    <div class="home">
+        <div class="container">
+            <div class="login-page clearfix">
+                <div class="logged-in-box auth0-box logged-in">
+                    <h1 id="logo"><img src="//cdn.auth0.com/samples/auth0_logo_final_blue_RGB.png" /></h1>
+                    <img class="avatar" src="{{userinfo['picture']}}"/>
+                    <h1>Welcome on profit service website!!</h1>
+                    <!-- <h2>Welcome {{userinfo['name']}}</h2> --> 
+                    <!-- <pre>{{userinfo_pretty}}</pre> --> 
+                    <a class="btn btn-primary btn-lg btn-logout btn-block" href="/logout">Logout</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <p>Footer</p>
+    </div>
+{% endblock %}
